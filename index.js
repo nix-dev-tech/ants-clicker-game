@@ -5,7 +5,7 @@ var farmerAntCost = 15;
 var soldierAntsCost = 50;
 var territoryFoodCost = 1000;
 var territorySoldierCost = 5;
-var armyRequired = 10;
+var armyRequired = 5;
 var upgradeFood = 250;
 }
 
@@ -214,7 +214,7 @@ window.onload = function(){
     populateTechniqueCost();
     //add event listner on foodpile
     id("foodpile").addEventListener("click", function(){
-        food = food + (1 * (territories + 1));
+        food = food + (2 * (territories + 1));
         id("food").innerHTML = food;
     });
 
