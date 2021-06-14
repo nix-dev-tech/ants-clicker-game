@@ -15,7 +15,7 @@ var upgradeFood = 250;
     var farmerAntsBasePrice = 15;
     var workerAntsBasePrice = 25;
     var territoryFoodCostBasePrice = 1000;
-    var territorySoldierCostBasePrice = 2;
+    var territorySoldierCostBasePrice = 5;
     var armyRequiredBasePrice = 5;
 }
 //resources Info
@@ -297,7 +297,7 @@ window.onload = function(){
         if(food >= territoryFoodCost && soldierAnts >= territorySoldierCost){
             //update food and worker ants details
             food = food - territoryFoodCost;
-            soldierAnts = soldierAnts - territorySoldierCost;
+            soldierAnts = soldierAnts;
             //territorySoldierCost = Math.round(territorySoldierCost * territorySoldierCostFactor);
             territorySoldierCost = territorySoldierCost + Math.round(territorySoldierCostBasePrice * territorySoldierCostFactor);
             //territoryFoodCost = Math.round(territoryFoodCost * territoryFoodCostFactor);
