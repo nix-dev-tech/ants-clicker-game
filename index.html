@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ants Clicker Game</title>
+    </head>
+    <body>
+        <meta charset="utf-8"/>
+        <title>Ants Clicker</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="index.js"></script>
+        <div class="help">
+            <table id = "helpBtn" class="help">
+                <tr>
+                    <td id="image"><img src="help.png"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="helpModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <header>
+                    <center>
+                        <h1>
+                            Welcome to Ants Clicker Game
+                        </h1>
+                    </center>
+                </header>
+                <table class="antsInfo" border="1">
+                    <tr>
+                        <td align="center" class = "helpClass"><img src="help2.png"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" class = "helpClass"><img src="help4.png"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" class = "helpClass"><img src="help5.png"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" class = "helpClass"><img src="help6.png"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" class = "helpClass"><img src="help8.png"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" class = "helpClass"><img src="help10.png"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" class = "helpClass"><img src="help11.png"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" class = "helpClass"><img src="help12.png"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" class = "helpClass"><img src="help14.png"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" class = "helpClass"><img src="help16.png"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" class = "helpClass"><img src="help18.png"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="sectionLeft">
+            <center>
+                <h1>
+                    Ants Clicker Game
+                </h1>
+                <div class="foodContainer">
+                    Food: <span id="food">0</span><br>
+                    Food Generation per Second: <span id="foodpersecond">0</span>
+                </div>
+                <br>
+                <div class="clickerContainer">
+                    <img id="foodpile" src="food.png" height="256px" width="256px">
+                </div>
+            </center>
+        </div>
+
+        <div class="sectionRight">
+            <div class="upgrades">
+                <table id = "upgradeBtn" class="upgrade">
+                    <tr>
+                        <td id="image"><img src="upgrade.png"></td>
+                    </tr>
+                </table>
+            </div>
+            <table id = "farmerAntsBtn" class="antsCreation">
+                <tr>
+                    <td id="image"><img src="farmerAnts.jpg"></td>
+                    <td id="nameAndCost">
+                        <p>Farmer Ants</p>
+                        <p><span id="farmerAntsCost">15</span> Food</p>
+                    </td>
+                    <td id="amount"><span id="farmerAnts">0</span></td>
+                </tr>
+            </table>
+            <table id = "workerAntsBtn" class="antsCreation">
+                <tr>
+                    <td id="image"><img src="workerAnts.jpg"></td>
+                    <td id="nameAndCost">
+                        <p>Worker Ants</p>
+                        <p><span id="workerAntsCost">25</span> Food</p>
+                    </td>
+                    <td id="amount"><span id="workerAnts">0</span></td>
+                </tr>
+            </table>
+            <table id = "soldierAntsBtn" class="antsCreation">
+                <tr>
+                    <td id="image"><img src="soldierAnts.jpg"></td>
+                    <td id="nameAndCost">
+                        <p>Soldier Ants</p>
+                        <p><span id="soldierAntsCost">50</span> Food</p>
+                    </td>
+                    <td id="amount"><span id="soldierAnts">0</span></td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <table id = "territoryBtn" class="territoryExpansion">
+                <tr>
+                    <td id="image"><img src="territory.PNG"></td>
+                    <td id="nameAndCost">
+                        <p>Expand Territory</p>
+                        <p><span id="territoryFoodCost">1000</span> Food </p>
+                        <p><span id="territorySoldierCost">15</span> SoldierAnts</p>
+                    </td>
+                    <td id="amount"><span id="territories">0</span></td>
+                </tr>
+            </table>
+        </div>
+        <div id="territoryModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <header>
+                    <center>
+                        <h1>
+                            Territories
+                        </h1>
+                    </center>
+                </header>
+                <div id="territoryImage">
+                    <img id = myImage src="Territories/original.png">
+                </div>
+            </div>
+        </div>
+
+        <div id="upgradeModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <header>
+                    <center>
+                        <h1>
+                            Upgrades
+                        </h1>
+                    </center>
+                </header>
+
+                <div class = "upgrades-content">
+                    <div class = "upgradeText">Next Upgrade:</span></div>
+                    <div class = "upgradeBox">
+                        <table id = "nextUpgrade" class="upgrade">
+                            <tr>
+                                <td id="name">
+                                    <p><span id="technique">Leaf-cutter Ants Technique: Food Generation(Farmer Ants) Bonus- 5%</span></p>
+                                </td>
+                                <td id="costButton">
+                                    <p>
+                                        Food:<span id="techniqueCost">500</span>
+                                        Territories:<span id="minTerritories">1</span>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <br>
+                    <hr size="8" width="100%" color="red">
+                    <div class = "upgradeText">Upcoming Upgrades:</span></div>
+                    <div class = "upgradeBox">
+                        <table id = "upcomingUpgrade" class="upgrade">
+                            <!-- 
+                            <tr>
+                                <td id="name">
+                                    <p><span id="technique">Leaf-cutter Ants Technique: Food Generation(Farmer Ants) Bonus- 5%</span></p>
+                                </td>
+                                <td id="cost">
+                                    <p>
+                                        <span id="techniqueCost">Food:1000</span>
+                                        <span id="territories">Territories:2</span>
+                                    </p>
+                                </td>
+                            </tr>
+                            -->
+                            <br>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <br>
+        <br>
+        <hr size="8" width="90%" color="red">
+        
+        <span id = "enemyWarning" class = "hiddenWarning">
+            <p class="enemy">
+                <strong> Warning!!!</strong>
+                Enemy swarm approaching in <span id="plainWarning"></span>minutes. Soldier Ants needed: <span id= "army"></span>.
+            </p>
+        </span>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,295 @@
+body{
+    background-image: url('sand.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+}
+
+.sectionLeft{
+    float: left;
+    width: 80%;
+}
+
+.sectionRight{
+    float: right;
+    width: 20%;
+}
+
+.sectionRight .upgrades{
+    margin: auto;
+}
+
+/*help button model*/
+.help{
+    height: 50px;
+    width: 50px;
+}
+
+.help img{
+    height: 45px;
+    width: 45px;
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+
+.help img:hover{
+    transform: scale(1.10);
+}
+
+/*upgrades button model*/
+.upgrades{
+    height: 50px;
+    width: 50px;
+}
+
+.upgrades img{
+    height: 45px;
+    width: 45px;
+    transition: all .2s ease-in-out;
+}
+
+.upgrades img:hover{
+    transform: scale(1.10);
+}
+
+/*Food information model*/
+.foodContainer{
+    background-color : rgb(238,238,238, 0.6);
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*Food Clicker Model*/
+.clickerContainer img{
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+
+.clickerContainer img:hover{
+    transform: scale(1.05);
+}
+
+.clickerContainer img:active{
+    transform: scale(0.99);
+}
+
+/*Ants Button Model*/
+.antsCreation{
+    background-color: #f2a013;
+    transition: all .2s ease-in-out;
+    border-radius: 10px;
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+}
+
+.antsCreation:hover{
+    background-color: #abc4ad;
+    transition: all .2s ease-in-out;
+}
+
+.antsCreation #image{
+    width: 25%;
+}
+
+.antsCreation img{
+    height: 64px;
+    width: 64px;
+}
+
+.antsCreation #nameAndCost p{
+    margin: 0px;
+    width: 60%;
+}
+
+.antsCreation #nameAndCost p:first-of-type{
+    font-size: 24px;
+}
+
+.antsCreation #amount{
+    font-size: 48px;
+    color: #595959;
+    font-family: roboto;
+    width: 15%;
+}
+
+/*Territory Button Model*/
+.territoryExpansion{
+    background-color: #f2a013;
+    transition: all .2s ease-in-out;
+    border-radius: 10px;
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+}
+
+.territoryExpansion:hover{
+    background-color: #d60e0e;
+    transition: all .2s ease-in-out;
+}
+
+.territoryExpansion #image{
+    width: 25%;
+}
+
+.territoryExpansion img{
+    height: 64px;
+    width: 64px;
+}
+
+.territoryExpansion #nameAndCost p{
+    margin: 0px;
+    width: 60%;
+}
+
+.territoryExpansion #nameAndCost p:first-of-type{
+    font-size: 24px;
+}
+
+.territoryExpansion #amount{
+    font-size: 48px;
+    color: #302e2e;
+    font-family: roboto;
+    width: 15%;
+}
+
+/*help Model */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  .modal-body{
+    background-image: url("sand.png");
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    background-image: url("sand.png");
+  }
+  
+  /* Close Button Model*/
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /*Help Ants information*/
+  .antsInfo{
+    background-color: #b5b5b5;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    background: transparent;
+    }
+
+    .antsInfo img{
+        height: auto;
+        width: 100%;
+    }
+
+    .antsInfo .helpClass{
+        margin: auto;
+    }
+
+    #territoryImage{
+        text-align: center;
+    }
+
+    #enemyWarning{
+        font-size: 36px;
+        font-weight: bold;
+        color: red;
+    }
+
+    .enemy{
+        text-align: center;
+    }
+
+    .hiddenWarning{
+        display: none;
+    }
+    
+    .upgrades-content{
+        width: 100%;
+        border-radius: 10px;
+        margin: auto;
+    }
+
+    .upgradeText{
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .upgradeBox{
+        width: 100%;
+    }
+
+    .upgrade{
+        background: transparent;
+        background-color: #f2a013;
+        transition: all .2s ease-in-out;
+        border-radius: 10px;
+        width: 100%;
+        margin: 10px 0px 10px 0px;
+    }
+    .upgrade #name{
+        margin: 0px;
+        width: 70%;
+        font-size: 24px;
+        float: left;
+    }
+    
+    .upgrade #cost{
+        font-size: 24px;
+        color: #111111;
+        font-family: roboto;
+        width: 30%;
+        position: relative;
+        margin: auto;
+    }
+
+    .upgrade #costButton{
+        font-size: 24px;
+        color: #111111;
+        font-family: roboto;
+        width: 30%;
+        position: relative;
+        margin: auto;
+        
+    }
+
+    .upgrade #costButton:hover{
+        background-color: #ee9803;
+        transition: all .2s ease-in-out;
+        transform: scale(1.05);
+    }
+
+    .upgrade #upgradeRow{
+        page-break-after: always;
+    }
+
