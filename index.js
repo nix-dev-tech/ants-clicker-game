@@ -15,7 +15,7 @@ var upgradeFood = 250;
     var farmerAntsBasePrice = 15;
     var workerAntsBasePrice = 25;
     var territoryFoodCostBasePrice = 1000;
-    var territorySoldierCostBasePrice = 5;
+    var territorySoldierCostBasePrice = 2;
     var armyRequiredBasePrice = 5;
 }
 //resources Info
